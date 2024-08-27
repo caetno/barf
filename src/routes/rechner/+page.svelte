@@ -76,8 +76,17 @@
 </script>
 
 <main>
-  <h1>BARF Rechner</h1>
+	<div class="flex justify-center items-center">
+		<h1 class="text-center h1">
+		<span class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent box-decoration-clone center">
+			BARF Rechner
+		</span>
+	</h1>
+	</div>
 	<div class="flex flex-row flex-wrap">
+
+
+
 		<form>
 			<div class="card p-2 m-4 w-auto text-token space-y-4">
 <Accordion>

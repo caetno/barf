@@ -27,17 +27,24 @@
 
 
 
-<AppBar>
-	<svelte:fragment slot="lead">{$page.url.pathname}</svelte:fragment>
-	
-	<svelte:fragment slot="trail">
-		<a href="/dogs" aria-label="Hunde verwalten">🐕</a>
-		<a href="/meats" aria-label="Fleischsorten verwalten">🥩</a>
-		<a href="/rechner" aria-label="BARF-Rechner">🧮</a>
-	</svelte:fragment>
+<AppBar background= ""
+order="border border-white border-opacity-20"
+padding="p-0" gridColumns="grid-cols-1" slotDefault="place-self-center" slotTrail="place-content-end">
+
+	<img src="/logo.png" class="w-24 h-auto" alt="Logo" />
+
 </AppBar>
 
 
 
 
 <slot />
+
+<style>
+  .frosted-glass {
+    background-color: rgba(255, 255, 255, 0.3); /* Weiße Farbe mit 30% Transparenz */
+    backdrop-filter: blur(10px); /* Unschärfe-Effekt */
+    -webkit-backdrop-filter: blur(10px); /* Unschärfe-Effekt für Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Optional: eine leichte Umrandung */
+  }
+</style>
