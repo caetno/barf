@@ -27,13 +27,16 @@
 
 
 
-<AppBar background= ""
-order="border border-white border-opacity-20"
-padding="p-0" gridColumns="grid-cols-1" slotDefault="place-self-center" slotTrail="place-content-end">
+<AppBar background=""  padding="p-2" gridColumns="grid-cols-1" slotDefault="place-self-center" slotTrail="place-content-end">
+  <div class="relative flex justify-center items-center">
+    <!-- Logo -->
+    <img src="/logo.png" class="w-24 h-auto relative z-10" alt="Logo" />
 
-	<img src="/logo.png" class="w-24 h-auto" alt="Logo" />
-
+    <!-- Blur-Effekt -->
+    <div class="absolute w-full h-full rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-lg"></div>
+  </div>
 </AppBar>
+
 
 
 

@@ -77,10 +77,13 @@
 
 <main>
 	<div class="flex justify-center items-center">
-		<h1 class="text-center h1">
+		<h1 class="text-center relative h1">
 		<span class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent box-decoration-clone center">
 			BARF Rechner
 		</span>
+		<span class="absolute inset-0 text-center text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text blur-sm">
+      BARF Rechner
+    </span>
 	</h1>
 	</div>
 	<div class="flex flex-row flex-wrap">
