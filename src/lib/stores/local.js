@@ -4,12 +4,12 @@ import { writable } from 'svelte/store';
 // Standardwerte für die Eingabefelder
 let barfValues = {
   alter: 1,
-  gewicht: 1,
+  gewicht: 17,
   futtermengeProzent: 3,
   fettMager: 0,
   gewuenschterFettanteil: 20,
   anteilTierisch: 80,
-  anteilMuskelfleisch: 50,
+  anteilMuskelfleisch: 70,
   anteilPansen: 20,
   anteilInnereien: 15,
   anteilKnochen: 15,

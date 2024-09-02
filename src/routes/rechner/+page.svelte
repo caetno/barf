@@ -5,21 +5,9 @@
   import { Barbell, Percent } from 'phosphor-svelte';
 
   let {
-  alter = 0, // Default value for alter (e.g., 0 months)
-  gewicht = 0, // Default value for gewicht (e.g., 0 kg)
-  futtermengeProzent = 2, // Default percentage of food relative to weight
-  fettMager = null, // Default value for fettMager (e.g., null to indicate no selection)
-  fettDurchwachsen = null, // Default value for fettDurchwachsen (e.g., null to indicate no selection)
-  gewuenschterFettanteil = 15, // Default desired fat percentage
-  anteilTierisch = 80, // Default percentage of animal-based food
-  anteilMuskelfleisch = 70, // Default percentage of muscle meat
-  anteilPansen = 20, // Default percentage of tripe
-  anteilInnereien = 15, // Default percentage of organs
-  anteilKnochen = 15, // Default percentage of bones
-  anteilObst = 25, // Default percentage of fruit
-  anteilGemuese = 75 // Default percentage of vegetables
-} = {};
-
+    alter, gewicht, futtermengeProzent, fettMager, fettDurchwachsen, gewuenschterFettanteil,
+    anteilTierisch, anteilMuskelfleisch, anteilPansen, anteilInnereien, anteilKnochen, anteilObst, anteilGemuese
+  } = {};
 
   let fettMagerOption = 'Anderes';
   let fettDurchwachsenOption = 'Anderes';
