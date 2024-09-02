@@ -5,9 +5,21 @@
   import { Barbell, Percent } from 'phosphor-svelte';
 
   let {
-    alter, gewicht, futtermengeProzent, fettMager, fettDurchwachsen, gewuenschterFettanteil,
-    anteilTierisch, anteilMuskelfleisch, anteilPansen, anteilInnereien, anteilKnochen, anteilObst, anteilGemuese
-  } = {};
+  alter = 0, // Default value for alter (e.g., 0 months)
+  gewicht = 0, // Default value for gewicht (e.g., 0 kg)
+  futtermengeProzent = 2, // Default percentage of food relative to weight
+  fettMager = null, // Default value for fettMager (e.g., null to indicate no selection)
+  fettDurchwachsen = null, // Default value for fettDurchwachsen (e.g., null to indicate no selection)
+  gewuenschterFettanteil = 15, // Default desired fat percentage
+  anteilTierisch = 80, // Default percentage of animal-based food
+  anteilMuskelfleisch = 70, // Default percentage of muscle meat
+  anteilPansen = 20, // Default percentage of tripe
+  anteilInnereien = 15, // Default percentage of organs
+  anteilKnochen = 15, // Default percentage of bones
+  anteilObst = 25, // Default percentage of fruit
+  anteilGemuese = 75 // Default percentage of vegetables
+} = {};
+
 
   let fettMagerOption = 'Anderes';
   let fettDurchwachsenOption = 'Anderes';
@@ -244,29 +256,29 @@
 
               <label for="anteilTierisch">
                 <span>Anteil Tierisch</span>
-                <input id="anteilTierisch" type="number" bind:value={anteilTierisch} min="0" max="100" step="1" />
+                <input class="input" id="anteilTierisch" type="number" bind:value={anteilTierisch} min="0" max="100" step="1" />
               </label>
 
               <label for="anteilMuskelfleisch">
                 <span>Davon Muskelfleisch:</span>
-                <input id="anteilMuskelfleisch" type="number" bind:value={anteilMuskelfleisch} min="0" max="100" step="1" />
+                <input class="input" id="anteilMuskelfleisch" type="number" bind:value={anteilMuskelfleisch} min="0" max="100" step="1" />
               </label>
 
               <hr class="!border-t-2" />
 
               <label for="anteilPansen">
                 <span>Anteil Pansen/Blättermagen:</span>
-                <input id="anteilPansen" type="number" bind:value={anteilPansen} min="0" max="100" step="1" />
+                <input class="input" id="anteilPansen" type="number" bind:value={anteilPansen} min="0" max="100" step="1" />
               </label>
 
               <label for="anteilInnereien">
                 <span>Anteil Innereien:</span>
-                <input id="anteilInnereien" type="number" bind:value={anteilInnereien} min="0" max="100" step="1" />
+                <input class="input" id="anteilInnereien" type="number" bind:value={anteilInnereien} min="0" max="100" step="1" />
               </label>
 
               <label for="anteilKnochen">
                 <span>Anteil Knochen:</span>
-                <input id="anteilKnochen" type="number" bind:value={anteilKnochen} min="0" max="100" step="1" />
+                <input class="input" id="anteilKnochen" type="number" bind:value={anteilKnochen} min="0" max="100" step="1" />
               </label>
 
               <h3>Pflanzlich</h3>
@@ -275,12 +287,12 @@
 
               <label for="anteilObst">
                 <span>Anteil Obst:</span>
-                <input id="anteilObst" type="number" bind:value={anteilObst} min="0" max="100" step="1" />
+                <input class="input" id="anteilObst" type="number" bind:value={anteilObst} min="0" max="100" step="1" />
               </label>
 
               <label for="anteilGemuese">
                 <span>Anteil Gemüse:</span>
-                <input id="anteilGemuese" type="number" bind:value={anteilGemuese} min="0" max="100" step="1" />
+                <input class="input" id="anteilGemuese" type="number" bind:value={anteilGemuese} min="0" max="100" step="1" />
               </label>
             </svelte:fragment>
           </AccordionItem>
